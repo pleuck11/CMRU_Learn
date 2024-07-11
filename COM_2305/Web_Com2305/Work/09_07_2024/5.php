@@ -54,10 +54,13 @@
 
         if ($num1 > $num2) {
             echo "<p style='text-align:center;'>ตัวเลขที่ 1 มากกว่าตัวเลขที่ 2</p>";
+            echo "<p style='text-align:center;'> ".$num1." มากกว่า ".$num2."</p>";
         } elseif ($num1 < $num2) {
             echo "<p style='text-align:center;'>ตัวเลขที่ 1 น้อยกว่าตัวเลขที่ 2</p>";
+            echo "<p style='text-align:center;'> ".$num1." น้อยกว่า ".$num2."</p>";
         } else {
             echo "<p style='text-align:center;'>ตัวเลขที่ 1 เท่ากับตัวเลขที่ 2</p>";
+            echo "<p style='text-align:center;'> ".$num1." เท่ากันกับ ".$num2."</p>";
         }
     }
     ?>

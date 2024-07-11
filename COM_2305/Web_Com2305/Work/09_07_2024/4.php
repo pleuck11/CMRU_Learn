@@ -100,7 +100,7 @@
 
     <form name="loginForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
         <div class="imgcontainer">
-            <img src="" class="avatar">
+            <img src="C:\Users\pacha\OneDrive\เอกสาร\GitHub\CMRU_Learn\COM_2305\Web_Com2305\image\รูปอวาร์ต้าน่ารักๆ1.jpg" class="avatar">
         </div>
 
         <div class="container">
