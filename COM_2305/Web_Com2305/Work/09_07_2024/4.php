@@ -57,7 +57,6 @@
                 padding-top: 16px;
             }
 
-            /* เปลี่ยนสไตล์สำหรับ span และปุ่มยกเลิกในหน้าจอขนาดเล็ก */
             @media screen and (max-width: 300px) {
                 span.psw {
                     display: block;
@@ -101,7 +100,7 @@
 
     <form name="loginForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
         <div class="imgcontainer">
-            <img src="img_avatar2.png" alt="อวตาร" class="avatar">
+            <img src="" class="avatar">
         </div>
 
         <div class="container">
