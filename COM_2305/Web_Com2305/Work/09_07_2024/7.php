@@ -9,17 +9,18 @@
 </head>
 <body>
 
-<form method="post" action="">
-    <input type="number" name="num1" placeholder="Enter first number" required>
-    <select name="operator" required>
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-    </select>
-    <input type="number" name="num2" placeholder="Enter second number" required>
-    <button type="submit" name="calculate">Calculate</button>
-</form>
+<h2> คำนวณคณิตสาสตร์ </h2>
+    <form method="post" action="">
+        <input type="number" name="num1" placeholder="Number1" required>
+        <select name="operator" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" name="num2" placeholder="Number2" required>
+        <button type="submit" name="calculate">Calculate</button>
+    </form>
     
 </body>
 
@@ -54,7 +55,8 @@ if (isset($_POST['calculate'])) {
             exit();
     }
 
-    echo "<h2>Result: $result</h2>";
+    echo "<h2>$num1  $operator  $num2</h2>";
+    echo "<h2>ผลลัพธ์: $result</h2>";
 }
 
 ?>
