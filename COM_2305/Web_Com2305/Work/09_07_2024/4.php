@@ -100,7 +100,7 @@
 
     <form name="loginForm" action="/action_page.php" method="post" onsubmit="return validateForm()">
         <div class="imgcontainer">
-            <img src="C:\Users\pacha\OneDrive\เอกสาร\GitHub\CMRU_Learn\COM_2305\Web_Com2305\image\รูปอวาร์ต้าน่ารักๆ1.jpg" class="avatar">
+            <img src="https://raw.githubusercontent.com/pleuck11/CMRU_Learn/main/COM_2305/Web_Com2305/image/%E0%B8%A3%E0%B8%B9%E0%B8%9B%E0%B8%AD%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%95%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%861.jpg" class="avatar">
         </div>
 
         <div class="container">
