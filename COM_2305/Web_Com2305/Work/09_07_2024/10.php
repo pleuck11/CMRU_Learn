@@ -1,25 +1,33 @@
+<!-- 10. เขียนโปรแกรมเป็นอาร์เรย์เก็บวันใน 1 สัปดาห์ จากนั้นให้ใช้ foreach แสดงข้อมูลในอาร์เรย์ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แบบฝึกหัดข้อที่10</title>
+    <title>แบบฝึกหัดข้อที่ 10</title>
 </head>
 <body>
 
-    
-</body>
-
+<pre>
 <?php
 
-    // สร้างอาร์เรย์เก็บวันในหนึ่งสัปดาห์
-    $daysOfWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    $daysOfWeek = [
+        "วันจันทร์      [MON] = Monday",
+        "วันอังคาร     [TUE] = Tuesday",
+        "วันพุธ         [WED] = Wednesday",
+        "วันพฤหัสบดี [THU] = Thursday",
+        "วันศุกร์        [FRI] = Friday",
+        "วันเสาร์       [SAT] = Saturday",
+        "วันอาทิตย์   [SUN] = Sunday"
+    ];
     
-    // ใช้ foreach เพื่อแสดงข้อมูลในอาร์เรย์
     foreach ($daysOfWeek as $day) {
-        echo $day . "<br>";
+        echo $day . "\n";
     }
-    
 ?>
+</pre>
 
+</body>
 </html>
+
