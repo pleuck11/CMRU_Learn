@@ -15,7 +15,7 @@
     <h1> แม่สูตรคูณ </h1>
     <form method="post" action="">
         <label for="number">ป้อนสูตรคูณแม่:</label>
-        <input type="number" id="number" name="number" required>
+        <input type="number"  name="number" required>
         <button type="submit">ผลลัพธ์</button>
     </form>
 

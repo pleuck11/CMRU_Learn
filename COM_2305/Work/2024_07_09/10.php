@@ -12,18 +12,20 @@
 <pre>
 <?php
 
-    $daysOfWeek = [
-        "วันจันทร์      [MON] = Monday",
-        "วันอังคาร     [TUE] = Tuesday",
-        "วันพุธ         [WED] = Wednesday",
-        "วันพฤหัสบดี [THU] = Thursday",
-        "วันศุกร์        [FRI] = Friday",
-        "วันเสาร์       [SAT] = Saturday",
-        "วันอาทิตย์   [SUN] = Sunday"
-    ];
+    $days = array
+    (
+        "Mon" => "วันจันทร์",
+        "Tue" => "วันอังคาร",
+        "Wed" => "วันพุธ",
+        "Thu" => "วันพฤหัสบดี",
+        "Fri" => "วันศุกร์",
+        "Sat" => "วันเสาร์",
+        "Sun" => "วันอาทิตย์"
+    );
     
-    foreach ($daysOfWeek as $day) {
-        echo $day . "\n";
+    foreach ($days as $k => $v)
+    {
+        echo "\$days [$k] = $v <br>";
     }
 ?>
 </pre>
