@@ -25,13 +25,11 @@
 
         echo "<h1>แม่สูตรคูณ: {$number}</h1>";
 
-        //  for loop
         echo "<h2> ใช้ลูป for </h2>";
         for ($i = 1; $i <= 12; $i++) {
             echo "$number x $i = " . ($number * $i) . "<br>";
         }
 
-        //  while loop
         echo "<h2> ใช้ลูป while </h2>";
         $i = 1;
         while ($i <= 12) {
@@ -39,7 +37,6 @@
             $i++;
         }
 
-        //  do-while loop
         echo "<h2> ใช้ลูป do-while </h2>";
         $i = 1;
         do {

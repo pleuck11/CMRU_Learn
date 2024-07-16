@@ -72,7 +72,7 @@
                 var username = document.forms["loginForm"]["uname"].value;
                 var password = document.forms["loginForm"]["psw"].value;
 
-                // ตั้งรหัสผ่านที่ถูกต้อง
+                // ตั้งรหัสผ่านที่ถูก
                 var correctUsername = "Pleuck";
                 var correctPassword = "5555";
 

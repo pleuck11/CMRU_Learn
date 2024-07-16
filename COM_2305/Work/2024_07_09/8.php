@@ -23,7 +23,7 @@
 
 <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // รับค่าจากฟอร์ม
+
         $name = $_POST['name'];
         $loop = $_POST['loop'];
     
