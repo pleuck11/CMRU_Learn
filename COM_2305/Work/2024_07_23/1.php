@@ -8,4 +8,11 @@
 <body>
     
 </body>
+
+<?php
+
+    echo round(3.4)."<br>";
+
+?>
+
 </html>

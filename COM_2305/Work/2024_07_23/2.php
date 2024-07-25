@@ -8,4 +8,15 @@
 <body>
     
 </body>
+
+<?php
+
+    // Max
+    echo max(5 , 2 , 10 , 1 , 20)."<br>";
+
+    // Min
+    echo min(5 , 2 , 10 , 1 , 20)."<br>";
+
+?>
+
 </html>

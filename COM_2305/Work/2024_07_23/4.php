@@ -11,13 +11,33 @@
 
 <?php
 
-    $name = "pocharapon hakad";
+$firstName = "Pocharapon";
+$lastName = "Hakad";
 
-    echo strtoupper($name."<br><br>");
-    echo strtolower($name."<br><br>");
-    echo ucfirst($name."<br><br>");
-    echo ucwords($name."<br><br>");
+// ตัวพิมพ์ใหญ่ทั้งหมด
+    echo "Strtoupper: " . strtoupper($firstName . " " . $lastName) . "<br><br>";
+
+// ตัวพิมพ์เล็กทั้งหมด
+    echo "Strtolower: " . strtolower($firstName . " " . $lastName) . "<br><br>";
+
+// ตัวแรกของคำเป็นตัวพิมพ์ใหญ่
+    echo "Ucfirst: " . ucfirst(strtolower($firstName)) . " " . ucfirst(strtolower($lastName)) . "<br><br>";
+
+// ตัวแรกของทุกคำเป็นตัวพิมพ์ใหญ่
+    echo "Ucwords: " . ucwords(strtolower($firstName . " " . $lastName)) . "<br><br>";
+
+// นับจำนวนตัวอักษร
+    echo "จำนวนอักษรในประโยค: " . strlen($firstName) . "<br>";
+    echo "จำนวนอักษรในประโยค: " . strlen($lastName) . "<br><br>";
+
+// แยกชื่อและนามสกุลออกจากกัน
+    echo "First Name: " . $firstName . "<br>";
+    echo "Last Name: " . $lastName . "<br><br>";
+
+// แสดงวันที่ปัจจุบัน
+    echo "วันที่ปัจจุบัน: " . date("Y-m-d") . "<br>";
 
 ?>
+
 
 </html>
