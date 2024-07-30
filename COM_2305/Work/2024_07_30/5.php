@@ -7,12 +7,13 @@
 </head>
 <body>
 
-    <form method="post" action="1.php" enctype="multipart/form-data"> 
+    <form method="post" action="upload.php" enctype="multipart/form-data"> 
 
     อัปโหลดรูปภาพ <input type="file" name="pict"> <br><br>
     <input type="submit" name="bt" value="ตกลง">
 
     </form>
+    <hr>
 
 </body>
 
