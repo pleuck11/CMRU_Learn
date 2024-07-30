@@ -15,7 +15,7 @@
         // การย้าย
         move_uploaded_file($tmp,$mving);
 
-        echo ‘<img sre= "$img"/>’;
+        echo '<img sre= "image/">';
 
     }
 

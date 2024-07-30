@@ -32,8 +32,20 @@
         $sMessage .="ชื่อผู้แจ้งซ่อม:".$name ."\n";
         $sMessage .="ชื่ออุปกรณ์:".$rq ."\n";
         $sMessage .="รายละเอียด:".$datail ."\n";
-        $Message = array('message' => $sMessage);
-        $mgs = ['message' => $sMessage];
+        // $Message = array('message' => $sMessage);
+        // $mgs = ['message' => $sMessage];
+
+        $imageFile = new CURLFile('images.png');
+        $sticker_package_id = '446';
+        $sticker_id = '1989';
+
+        $mgs = array(
+            'message' => $sMessage,
+            'imageFile' => $imageFile,
+            'stickerpackageid' => $sticker_package_id,
+            'stickerid' => $sticker_id
+
+        );
      
     //คำสั่งสำหรับให้ PHP เชื่อมต่อกับ Line Notify
         $chOne = curl_init();
@@ -41,8 +53,8 @@
         curl_setopt( $chOne, CURLOPT_SSL_VERIFYHOST, 0);
         curl_setopt( $chOne, CURLOPT_SSL_VERIFYPEER, 0);
         curl_setopt( $chOne, CURLOPT_POST, 1);
-       curl_setopt( $chOne, CURLOPT_POSTFIELDS, http_build_query($Message));
-       $headers = array( 'Content-type: application/x-www-form-urlencoded', 'Authorization: Bearer '.$sToken.'', );
+       curl_setopt( $chOne, CURLOPT_POSTFIELDS, http_build_query($mgs));
+       $headers = array( 'Content-type: multipart/form-data', 'Authorization: Bearer '.$sToken.'', );
        curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers);
         curl_setopt( $chOne, CURLOPT_RETURNTRANSFER, 1);
         $result = curl_exec( $chOne );
